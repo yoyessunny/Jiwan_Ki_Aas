@@ -19,7 +19,8 @@ import SlideShare from './components/SlideShare'
 import YouTube from './components/YouTube'
 import Header from "./components/Header";
 import GoogleSlides from "./components/GoogleSlides";
-
+import ScrollUp from "./components/ScrollUp";
+import WhatsApp from "./components/WhatsApp";
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
     <header className="header" id="header">
       <nav className="nav container">
          <a href="#" className="nav__logo">
-            <img className='Logo' src={heroPng} alt=''/>
+            <img className='Logo' src={heroPng} alt='Jiwan Ki Aas Logo'/>
          </a>
 
          <div className="nav__menu" id="nav-menu">
@@ -85,7 +86,7 @@ function App() {
                   Drug De-Addiction Counselling & Rehabilitation Center
                </p>
 
-               <a href="#delivery" className="button">Get Started</a>
+               <a href="tel:+916283794604" className="button">Get Started</a>
             </div>
 
             <div className="home__content grid">
@@ -137,7 +138,7 @@ function App() {
                      </div>
 
                      <h3 className="delivery__subtitle">Home Service</h3>
-                     <p>Fast home vaccination service.</p>
+                     <p>Fast home to centre patient transport service.</p>
                   </div>
 
                   <div>
@@ -145,8 +146,8 @@ function App() {
                         <i className="ri-time-fill"></i>
                      </div>
 
-                     <h3 className="delivery__subtitle">1 Hour Service</h3>
-                     <p>Super easy and quick service for patients.</p>
+                     <h3 className="delivery__subtitle">24/7 Consultation Service</h3>
+                     <p>Super easy and quick consultation for patients.</p>
                   </div>
 
                   <div>
@@ -276,7 +277,7 @@ function App() {
                <SwiperSlide className='swiperSlide'>
                   <article className="prices__card">
                      <div className="prices__heading">
-                     <h2 className="prices__number">14,999 INR</h2>
+                     <h2 className="prices__number">17,999 INR</h2>
                      <h3 className="prices__title">
                         General Treatment
                      </h3>
@@ -464,8 +465,8 @@ function App() {
                      <h3 className="contact__subtitle">Phone number</h3>
 
                      <address className="contact__address">
-                        +0123(00)-765-4321 <br/>
-                        +00-0123456
+                        +91-6283794604 <br/>
+                        +91-9501611164
                      </address>
                   </div>
                </div>
@@ -477,6 +478,7 @@ function App() {
             </div>
          </div>
       </section>
+
 
    {/* <!--==================== FOOTER ====================--> */}
    <footer className="footer">
@@ -520,12 +522,9 @@ function App() {
       <span className="footer__copy"> All Rights Reserved By Right Verse Technology
       </span>
    </footer>
+   <ScrollUp />
    <ChatBot></ChatBot>
-
-   {/* <!--========== SCROLL UP ==========--> */}
-   {/* <a href="#" className="scrollup" id="scroll-up">
-      <i className="ri-arrow-up-line"></i>
-   </a> */}
+    <WhatsApp />
 
     </>
   )

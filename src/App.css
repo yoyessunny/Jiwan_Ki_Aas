@@ -913,7 +913,7 @@ img {
 
 /*=============== SCROLL UP ===============*/
 .scrollup {
-  position: fixed;
+  position: absolute;
   right: 1rem;
   bottom: -50%;
   background-color: var(--body-color);
@@ -1404,6 +1404,13 @@ img {
   font-weight: 700;
   text-decoration: none;
   color: #1f6f8b;
+}
+
+.nav__logo img {
+  height: 70px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 

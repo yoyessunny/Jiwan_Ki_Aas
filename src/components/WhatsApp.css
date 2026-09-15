@@ -1,0 +1,169 @@
+.whatsapp-container {
+  position: fixed;
+  right: 25px;
+  bottom: 150px;
+  z-index: 9999;
+}
+
+/* Floating button */
+
+.whatsapp-button {
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #25d366;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Popup */
+
+.whatsapp-popup {
+  position: absolute;
+
+  right: 0;
+  bottom: 75px;
+
+  width: 330px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+
+  animation: whatsappPopup 0.3s ease;
+}
+
+@keyframes whatsappPopup {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+
+.whatsapp-popup__header {
+  background: #25d366;
+  color: white;
+
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.whatsapp-popup__header div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.whatsapp-popup__header div svg {
+  font-size: 25px;
+}
+
+.whatsapp-popup__header button {
+  border: none;
+  background: transparent;
+  color: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+/* Body */
+
+.whatsapp-popup__body {
+  padding: 20px;
+
+  color: #333;
+
+  line-height: 1.6;
+}
+
+.whatsapp-popup__body p {
+  margin-bottom: 15px;
+}
+
+/* Chat button */
+
+.whatsapp-chat-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  width: 100%;
+
+  padding: 12px;
+
+  background: #25d366;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-weight: 600;
+
+  transition: background 0.3s ease;
+}
+
+.whatsapp-chat-button:hover {
+  background: #1ebe5d;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+
+  .whatsapp-container {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .whatsapp-button {
+    width: 55px;
+    height: 55px;
+
+    font-size: 28px;
+  }
+
+  .whatsapp-popup {
+    width: calc(100vw - 30px);
+    right: 0;
+  }
+}

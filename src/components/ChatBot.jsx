@@ -30,7 +30,7 @@ const botReplies = {
     "Please contact our support team for our current location, directions, and admission information.",
 
   contact:
-    "You can contact our support team for confidential information about treatment, admissions, appointments, and rehabilitation programs.",
+    "You can contact our support team for confidential information about treatment, admissions, appointments, and rehabilitation programs. Call - +91-6283794604",
 
   emergency:
     "If someone is experiencing a medical emergency, severe withdrawal symptoms, loss of consciousness, difficulty breathing, or an immediate risk of harm, please contact your local emergency medical service immediately.",
