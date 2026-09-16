@@ -198,17 +198,17 @@ function App() {
 
                <div className="about__info">
                   <div className="about__stat">
-                     <h3 className="about__number">256</h3>
+                     <h3 className="about__number">1256+</h3>
                      <p className="about__details">Healthy <br/> Patients</p>
                   </div>
 
                   <div className="about__stat">
-                     <h3 className="about__number">16</h3>
-                     <p className="about__details">Hospital <br/> Care</p>
+                     <h3 className="about__number">9+</h3>
+                     <p className="about__details">Partner <br/>&nbsp;Hospitals</p>
                   </div>
 
                   <div className="about__stat">
-                     <h3 className="about__number">8</h3>
+                     <h3 className="about__number">7+</h3>
                      <p className="about__details">Years Of <br/> Experience</p>
                   </div>
                </div>
