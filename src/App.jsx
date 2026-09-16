@@ -92,8 +92,8 @@ function App() {
             <div className="home__content grid">
                <div className="home__info">
                   <div>
-                     <h2 className="home__name">Dr. Rohit Kothari</h2>
-                     <h3 className="home__profession">Psychiatrist & Mind Specialist</h3>
+                     <h2 className="home__name">Mr. Jaspal Singh</h2>
+                     <h3 className="home__profession">Project Director</h3>
 
                      <div className="home__icons">
                         <div className="home__box">
@@ -438,6 +438,7 @@ function App() {
                      <h3 className="contact__subtitle">Location</h3>
 
                      <address className="contact__address">
+                        Khasra No. 
                         Vill.-Nagal Bhaga <br/>
                         Teh.- Kalka <br/>
                         Panchkula, HRY

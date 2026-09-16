@@ -37,9 +37,12 @@ const botReplies = {
 
   thanks:
     "You're welcome! 😊 I'm here if you have any other questions.",
+  
+  rescue:
+    "Okay! Rescue can be done by us if the patient willings to get clean from drugs. Rescue can be by patient's own wish or team can do it from home patient transport service.",
 
   default:
-    "I'm sorry, I didn't quite understand that. You can ask me about detox, rehabilitation, treatment, counseling, programs, cost, appointments, or contact information."
+    "I'm sorry, I didn't quite understand that. You can ask me about detox, rehabilitation, treatment, rescue, counseling, programs, cost, appointments, or contact information."
 };
 
 
@@ -137,6 +140,14 @@ function getBotReply(message) {
     text.includes("thanks")
   ) {
     return botReplies.thanks;
+  }
+
+  if (
+    text.includes("rescue") ||
+    text.includes("save me") ||
+    text.includes("save")
+  ) {
+    return botReplies.rescue;
   }
 
   return botReplies.default;
