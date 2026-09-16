@@ -438,7 +438,7 @@ function App() {
                      <h3 className="contact__subtitle">Location</h3>
 
                      <address className="contact__address">
-                        Khasra No. 
+                        Khasra No. 56 <br/>
                         Vill.-Nagal Bhaga <br/>
                         Teh.- Kalka <br/>
                         Panchkula, HRY
