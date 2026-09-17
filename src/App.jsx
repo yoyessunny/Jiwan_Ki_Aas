@@ -5,6 +5,10 @@ import gallery1_Img from './assets/gallery1.png'
 import gallery2_Img from './assets/gallery2.png'
 import gallery3_Img from './assets/gallery3.png'
 import gallery4_Img from './assets/gallery4.png'
+import intern1_Img from './assets/intern1.png'
+import intern2_Img from './assets/intern2.png'
+import intern3_Img from './assets/intern3.png'
+import intern4_Img from './assets/intern4.png'
 import homeImg from './assets/home-img.png'
 import './App.css'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -61,6 +65,9 @@ function App() {
                   <a href='#gallery' className='nav__link'>Gallery</a>
                </li>
                <li>
+                  <a href='#internship' className='nav__link'>Internship</a>
+               </li>
+               <li>
                   <a href="#contact" className="nav__link">Contact</a>
                </li>
             </ul>
@@ -83,7 +90,7 @@ function App() {
                </h1>
 
                <p className="home__description">
-                  Drug De-Addiction Counselling & Rehabilitation Center
+                  Drug De-Addiction Counselling & Rehabilitation Center <br/>
                </p>
 
                <a href="tel:+916283794604" className="button">Get Started</a>
@@ -127,8 +134,10 @@ function App() {
                   <span>Home Rescue Services</span>
                </h2>
 
-               <p className="delivery__description">
-                  We provide door-to-door rescue services, available to all segments throughout the city 24/7.
+               <p className="delivery__description"><b>
+                  Through individual counselling, supportive conversations, behavioural guidance, and recovery planning, <br/>
+                  We help individuals take positive steps toward a healthier and more stable life. <br/>
+                  <i>Nasha Mukt Bharat</i> <br/></b>
                </p>
 
                <div className="delivery__info">
@@ -384,7 +393,31 @@ function App() {
             </div>
          </div>
       </section>
+      <br/>
+      <h1>Our Internship Programs</h1>
+      <p><b>We provide flexible internship & training programs under experienced professional individuals for College/University Bachelor's and Master's students.</b></p>
 
+      <section className="gallery section" id='internship'>
+         <div className="gallery__container container grid">
+            {/* <!-- Insert images according to the size of the reference images (1500 X 800, 800 X 1500, 150 X 150, etc.) --> */}
+            <div className="gallery__image">
+               <img src={intern1_Img} alt="image" className="gallery__img"/>
+            </div>
+
+            <div className="gallery__image">
+               <img src={intern2_Img} alt="image" className="gallery__img"/>
+            </div>
+
+            <div className="gallery__image">
+               <img src={intern3_Img} alt="image" className="gallery__img"/>
+            </div>
+
+            <div className="gallery__image">
+               <img src={intern4_Img} alt="image" className="gallery__img"/>
+            </div>
+         </div>
+      </section>
+      
       <section>
          <YouTube/>
       </section>
@@ -393,13 +426,12 @@ function App() {
          <div className="contact__container container grid">
             <div className="contact__data">
                <h2 className="section__title">
-                  Contact Me <br/>
+                  Contact Us <br/>
                   <span>On All Platforms</span>
                </h2>
 
                <p className="contact__description">
-                  Contact me on all my social media channels. I'm
-                  available for you and your health. Write to me now.
+                  Speak with our counselling team and discuss your concerns in a safe and supportive environment.
                </p>
 
                <div className="contact__info">
@@ -408,14 +440,14 @@ function App() {
                         <i className="ri-message-3-fill"></i>
                      </div>
 
-                     <h3 className="contact__subtitle">Write to me</h3>
+                     <h3 className="contact__subtitle">Write to us</h3>
 
                      <div className="contact__social">
                         <a href="https://m.me/bedimcode" target="_blank" className="contact__social-link">
                            <i className="ri-messenger-fill"></i>
                         </a>
 
-                        <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!"
+                        <a href="https://api.whatsapp.com/send?phone=916283794604&text=Hello, more information!"
                            target="_blank" className="contact__social-link">
                            <i className="ri-whatsapp-fill"></i>
                         </a>
