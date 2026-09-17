@@ -25,7 +25,7 @@ function Gallery() {
       
     <header className="header" id="header">
           <nav className="nav container">
-             <Link to="/#home" className="nav__logo">
+             <Link to="/" className="nav__logo">
                 <img className='Logo' src={heroPng} alt='Jiwan Ki Aas Logo'/>        
              </Link>
              <div className="nav__menu" id="nav-menu">
