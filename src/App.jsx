@@ -6,6 +6,7 @@ import './App.css'
 import "swiper/css";
 import "swiper/css/pagination";
 import 'remixicon/fonts/remixicon.css'
+import SchoolVisit from "./pages/SchoolVisit";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/internship" element={<Internship />} />
+        <Route path="/schoolvisit" element={<SchoolVisit />} />
       </Routes>
     </BrowserRouter>
   )

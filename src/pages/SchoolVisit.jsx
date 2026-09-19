@@ -1,12 +1,8 @@
 import { useState } from "react";
-import gallery1_Img from '../assets/gallery1.png'
-import gallery2_Img from '../assets/gallery2.png'
-import gallery3_Img from '../assets/gallery3.png'
-import gallery4_Img from '../assets/gallery4.png'
-import yoga1_Img from '../assets/yoga1.png'
-import yoga2_Img from '../assets/yoga2.png'
-import yoga3_Img from '../assets/yoga3.png'
-import yoga4_Img from '../assets/yoga4.png'
+import intern1_Img from '../assets/intern1.png'
+import intern2_Img from '../assets/intern2.png'
+import intern3_Img from '../assets/intern3.png'
+import intern4_Img from '../assets/intern4.png'
 import '../App.css'
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,7 +14,7 @@ import ScrollUp from "../components/ScrollUp";
 import WhatsApp from "../components/WhatsApp";
 import { Link } from "react-router-dom";
 
-function Gallery() {
+function SchoolVisit() {
 
    const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -31,7 +27,7 @@ function Gallery() {
              <Link to="/" className="nav__logo">
                 <img className='Logo' src={heroPng} alt='Jiwan Ki Aas Logo'/>        
              </Link>
-             <div className="nav__menu" id="nav-menu">
+               <div className="nav__menu" id="nav-menu">
                 <ul className="nav__list">
                    <li className="nav__item">
                       <Link to="/" className="nav__link active-link">Home</Link>
@@ -55,7 +51,8 @@ function Gallery() {
                    <li>
                       <Link to="/gallery" href="#gallery" className='nav__link'>Gallery</Link>
                    </li>
-                   {/* Dropdown */}
+                   
+{/* Dropdown */}
                      <li className="dropdown nav__link">
 
                      <button
@@ -81,11 +78,12 @@ function Gallery() {
                      )}
 
                      </li>
+
                    <li>
                       <a href="/#contact" className="nav__link">Contact</a>
                    </li>
                 </ul>
-             </div>
+               </div>
     
                 <div className="nav__buttons">
                    <div className="nav__toggle" id="nav-toggle">
@@ -98,54 +96,30 @@ function Gallery() {
 
             <br/>
             <br/>
-            <h1>Our Gallery</h1>
+            <h1>Our Internship Programs</h1>
+            <p><b>We provide flexible internship & training programs under experienced professional individuals for College/University Bachelor's and Master's students.</b></p>
       
             <section className="gallery section" id='internship'>
                <div className="gallery__container container grid">
                   {/* <!-- Insert images according to the size of the reference images (1500 X 800, 800 X 1500, 150 X 150, etc.) --> */}
                   <div className="gallery__image">
-                     <img src={gallery1_Img} alt="image" className="gallery__img"/>
+                     <img src={intern1_Img} alt="image" className="gallery__img"/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={gallery2_Img} alt="image" className="gallery__img"/>
+                     <img src={intern2_Img} alt="image" className="gallery__img"/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={gallery3_Img} alt="image" className="gallery__img"/>
+                     <img src={intern3_Img} alt="image" className="gallery__img"/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={gallery4_Img} alt="image" className="gallery__img"/>
+                     <img src={intern4_Img} alt="image" className="gallery__img"/>
                   </div>
                </div>
             </section>
             
-            
-            <br/>
-            <br/>
-            <h1>International Yoga Day Celebrations</h1>
-      
-            <section className="gallery section" id='internship'>
-               <div className="gallery__container container grid">
-                  {/* <!-- Insert images according to the size of the reference images (1500 X 800, 800 X 1500, 150 X 150, etc.) --> */}
-                  <div className="gallery__image">
-                     <img src={yoga1_Img} alt="image" className="gallery__img"/>
-                  </div>
-      
-                  <div className="gallery__image">
-                     <img src={yoga2_Img} alt="image" className="gallery__img"/>
-                  </div>
-      
-                  <div className="gallery__image">
-                     <img src={yoga3_Img} alt="image" className="gallery__img"/>
-                  </div>
-      
-                  <div className="gallery__image">
-                     <img src={yoga4_Img} alt="image" className="gallery__img"/>
-                  </div>
-               </div>
-            </section>
 
       <section className="contact section" id="contact">
          <div className="contact__container container grid">
@@ -288,4 +262,4 @@ function Gallery() {
   )
 }
 
-export default Gallery
+export default SchoolVisit

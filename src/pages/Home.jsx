@@ -57,10 +57,10 @@ function Home() {
                       <Link to="/gallery" href="#gallery" className='nav__link'>Gallery</Link>
                    </li>
                        {/* Dropdown */}
-                     <li className="dropdown">
+                     <li className="dropdown nav__link">
 
                      <button
-                        className="dropdown__button nav__link"
+                        className="dropdown__button"
                         onClick={() => setDropdownOpen(!dropdownOpen)}
                      >
                         Events
