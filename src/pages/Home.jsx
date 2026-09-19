@@ -1,3 +1,4 @@
+import { useState } from "react";
 import aboutImg from '../assets/about-img.png'
 import deliveryImg from '../assets/delivery-img.png'
 import homeImg from '../assets/home-img.png'
@@ -20,7 +21,9 @@ import { Link } from "react-router-dom";
 
 function Home() {
 
-  return (
+   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+   return (
     <>
 
       
@@ -53,9 +56,33 @@ function Home() {
                    <li>
                       <Link to="/gallery" href="#gallery" className='nav__link'>Gallery</Link>
                    </li>
-                   <li>
-                      <Link to="/internship" className='nav__link'>Internship</Link>
-                   </li>
+                       {/* Dropdown */}
+                     <li className="dropdown">
+
+                     <button
+                        className="dropdown__button nav__link"
+                        onClick={() => setDropdownOpen(!dropdownOpen)}
+                     >
+                        Events
+                        <span>⌄</span>
+                     </button>
+
+                     {dropdownOpen && (
+                        <ul className="dropdown__menu">
+
+                           <li>
+                               <Link to="/internship" className='nav__link'>Internship</Link>
+                           </li>
+
+                           <li>
+                               <Link to="/schoolvisit" className='nav__link'>School Visits</Link>
+                           </li>
+
+                        </ul>
+                     )}
+
+                     </li>
+
                    <li>
                       <a href="/#contact" className="nav__link">Contact</a>
                    </li>

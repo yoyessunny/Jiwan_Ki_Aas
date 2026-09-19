@@ -1,3 +1,4 @@
+import { useState } from "react";
 import gallery1_Img from '../assets/gallery1.png'
 import gallery2_Img from '../assets/gallery2.png'
 import gallery3_Img from '../assets/gallery3.png'
@@ -19,7 +20,9 @@ import { Link } from "react-router-dom";
 
 function Gallery() {
 
-  return (
+   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+   return (
     <>
 
       
@@ -52,9 +55,32 @@ function Gallery() {
                    <li>
                       <Link to="/gallery" href="#gallery" className='nav__link'>Gallery</Link>
                    </li>
-                   <li>
-                      <Link to="/internship" className='nav__link'>Internship</Link>
-                   </li>
+                   {/* Dropdown */}
+                     <li className="dropdown">
+
+                     <button
+                        className="dropdown__button nav__link"
+                        onClick={() => setDropdownOpen(!dropdownOpen)}
+                     >
+                        Events
+                        <span>⌄</span>
+                     </button>
+
+                     {dropdownOpen && (
+                        <ul className="dropdown__menu">
+
+                           <li>
+                               <Link to="/internship" className='nav__link'>Internship</Link>
+                           </li>
+
+                           <li>
+                               <Link to="/schoolvisit" className='nav__link'>School Visits</Link>
+                           </li>
+
+                        </ul>
+                     )}
+
+                     </li>
                    <li>
                       <a href="/#contact" className="nav__link">Contact</a>
                    </li>
