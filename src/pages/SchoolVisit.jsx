@@ -1,8 +1,8 @@
 import { useState } from "react";
-import intern1_Img from '../assets/intern1.png'
+import intern1_Img from '../assets/counselling.jpg'
 import intern2_Img from '../assets/intern2.png'
 import intern3_Img from '../assets/intern3.png'
-import intern4_Img from '../assets/intern4.png'
+import intern4_Img from '../assets/new_begin.png'
 import '../App.css'
 import "swiper/css";
 import "swiper/css/pagination";
