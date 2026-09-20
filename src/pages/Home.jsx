@@ -501,11 +501,11 @@ function Home() {
          </div>
 
          <div className="footer__social">
-            <a href="https://www.facebook.com/bedimcode" target="_blank" className="footer__social-link">
+            <a href="https://www.facebook.com/" target="_blank" className="footer__social-link">
                <i className="ri-facebook-circle-fill"></i>
             </a>
 
-            <a href="https://www.instagram.com/bedimcode/" target="_blank" className="footer__social-link">
+            <a href="https://www.instagram.com/" target="_blank" className="footer__social-link">
                <i className="ri-instagram-fill"></i>
             </a>
 
@@ -513,11 +513,11 @@ function Home() {
                <i className="ri-twitter-x-line"></i>
             </a>
 
-            <a href="https://www.youtube.com/watch?v=T_ciuZRTHrM" target="_blank" className="footer__social-link">
+            <a href="https://www.youtube.com/" target="_blank" className="footer__social-link">
                <i className="ri-youtube-fill"></i>
             </a>
 
-            <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank"
+            <a href="https://api.whatsapp.com/send?phone=916283794604&text=Hello, more information!" target="_blank"
                className="footer__social-link">
                <i className="ri-whatsapp-fill"></i>
             </a>
