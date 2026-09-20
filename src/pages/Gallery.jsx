@@ -63,7 +63,7 @@ function Gallery() {
                         onClick={() => setDropdownOpen(!dropdownOpen)}
                      >
                         Events
-                        <span>⌄</span>
+                        <i class="ri-arrow-down-line"></i>
                      </button>
 
                      {dropdownOpen && (
