@@ -1,8 +1,8 @@
 import { useState } from "react";
-import intern1_Img from '../assets/intern1.png'
-import intern2_Img from '../assets/intern2.png'
-import intern3_Img from '../assets/intern3.png'
-import intern4_Img from '../assets/intern4.png'
+import field1_Img from '../assets/Field1.jpg'
+import field2_Img from '../assets/Field2.jpg'
+import field3_Img from '../assets/Field3.jpg'
+import field4_Img from '../assets/Field4.jpg'
 import '../App.css'
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,7 +14,7 @@ import ScrollUp from "../components/ScrollUp";
 import WhatsApp from "../components/WhatsApp";
 import { Link } from "react-router-dom";
 
-function Internship() {
+function FieldVisit() {
 
    const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -115,19 +115,19 @@ function Internship() {
                <div className="gallery__container container grid">
                   {/* <!-- Insert images according to the size of the reference images (1500 X 800, 800 X 1500, 150 X 150, etc.) --> */}
                   <div className="gallery__image">
-                     <img src={intern1_Img} alt="image" className="gallery__img"/>
+                     <img src={field1_Img} alt="image" className="gallery__img"/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={intern2_Img} alt="image" className="gallery__img"/>
+                     <img src={field2_Img} alt="image" className="gallery__img"/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={intern3_Img} alt="image" className="gallery__img"/>
+                     <img src={field3_Img} alt="image" className="gallery__img"/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={intern4_Img} alt="image" className="gallery__img"/>
+                     <img src={field4_Img} alt="image" className="gallery__img"/>
                   </div>
                </div>
             </section>
@@ -274,4 +274,4 @@ function Internship() {
   )
 }
 
-export default Internship
+export default FieldVisit

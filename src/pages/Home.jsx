@@ -78,6 +78,17 @@ function Home() {
                                <Link to="/schoolvisit" className='nav__link'>School Visits</Link>
                            </li>
 
+                           <li>
+                               <Link to="/fieldvisit" className='nav__link'>Field Visits</Link>
+                           </li>
+                           
+                           <li>
+                               <Link to="/hivtest" className='nav__link'>HIV Test</Link>
+                           </li>
+                           
+                           <li>
+                               <Link to="/birthday" className='nav__link'>Birthday Celebrations</Link>
+                           </li>
                         </ul>
                      )}
 

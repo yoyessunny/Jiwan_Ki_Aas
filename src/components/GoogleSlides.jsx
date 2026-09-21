@@ -11,7 +11,7 @@ function GoogleSlides() {
 
         <div className="google-slides__wrapper">
           <iframe 
-            src="https://docs.google.com/presentation/d/e/2PACX-1vRor4MKRYoXduN9iH3t-FDKZYSdeigxArETj3cQgIJYvwk8lJ4kteAFsfImtSrF0ivzOqdl28YyUQoo/pubembed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+            src="https://docs.google.com/presentation/d/1copOMcSA34Vs1w4jxA_LmfIvatGEW_VTQnFVWyvLc5s/edit?usp=sharing" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
           </iframe>
         </div>
 

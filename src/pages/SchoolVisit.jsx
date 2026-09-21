@@ -1,8 +1,8 @@
 import { useState } from "react";
-import intern1_Img from '../assets/counselling.jpg'
-import intern2_Img from '../assets/intern2.png'
-import intern3_Img from '../assets/intern3.png'
-import intern4_Img from '../assets/new_begin.png'
+import school1_Img from '../assets/School1.jpg'
+import school2_Img from '../assets/School2.jpg'
+import school3_Img from '../assets/School3.jpg'
+import school4_Img from '../assets/School4.jpg'
 import '../App.css'
 import "swiper/css";
 import "swiper/css/pagination";
@@ -74,6 +74,18 @@ function SchoolVisit() {
                                <Link to="/schoolvisit" className='nav__link'>School Visits</Link>
                            </li>
 
+                           <li>
+                               <Link to="/fieldvisit" className='nav__link'>Field Visits</Link>
+                           </li>
+                           
+                           <li>
+                               <Link to="/hivtest" className='nav__link'>HIV Test</Link>
+                           </li>
+                           
+                           <li>
+                               <Link to="/birthday" className='nav__link'>Birthday Celebrations</Link>
+                           </li>
+ 
                         </ul>
                      )}
 
@@ -103,19 +115,19 @@ function SchoolVisit() {
                <div className="gallery__container container grid">
                   {/* <!-- Insert images according to the size of the reference images (1500 X 800, 800 X 1500, 150 X 150, etc.) --> */}
                   <div className="gallery__image">
-                     <img src={intern1_Img} alt="image" className="gallery__img"/>
+                     <img src={school1_Img} alt="image" className="gallery__img"/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={intern2_Img} alt="image" className="gallery__img"/>
+                     <img src={school2_Img} alt="image" className="gallery__img"/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={intern3_Img} alt="image" className="gallery__img"/>
+                     <img src={school3_Img} alt="image" className="gallery__img"/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={intern4_Img} alt="image" className="gallery__img"/>
+                     <img src={school4_Img} alt="image" className="gallery__img"/>
                   </div>
                </div>
             </section>
