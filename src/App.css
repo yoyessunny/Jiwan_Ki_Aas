@@ -577,6 +577,15 @@ img {
   transform: translateX(0.25rem);
 }
 
+
+.counsel__img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  filter: drop-shadow(0 16px 24px hsla(218, 68%, 18%, 0.6));
+  justify-self: center;
+}
+
 /*=============== PRICES ===============*/
 .prices__container {
   padding-bottom: 4rem;

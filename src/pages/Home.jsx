@@ -1,5 +1,6 @@
 import { useState } from "react";
 import aboutImg from '../assets/about-img.png'
+import counselImg from '../assets/counselling.jpg'
 import deliveryImg from '../assets/delivery-img.png'
 import homeImg from '../assets/home-img.png'
 import '../App.css'
@@ -14,10 +15,10 @@ import Location from "../components/Location";
 import SlideShare from '../components/SlideShare'
 import YouTube from '../components/YouTube'
 import Header from "../components/Header";
-import GoogleSlides from "../components/GoogleSlides";
 import ScrollUp from "../components/ScrollUp";
 import WhatsApp from "../components/WhatsApp";
 import { Link } from "react-router-dom";
+import PresentationCarousel from "../components/PresentationCarousel";
 
 function Home() {
 
@@ -259,7 +260,7 @@ function Home() {
       </section>
 
       <section>
-         <GoogleSlides></GoogleSlides>
+             <PresentationCarousel />
       </section>
 
       <section id='blogs'>
