@@ -21,6 +21,7 @@ import { Link } from "react-router-dom";
 function Gallery() {
 
    const [dropdownOpen, setDropdownOpen] = useState(false);
+   const [selectedImage, setSelectedImage] = useState(null);
 
    return (
     <>
@@ -63,7 +64,7 @@ function Gallery() {
                         onClick={() => setDropdownOpen(!dropdownOpen)}
                      >
                         Events
-                        <i class="ri-arrow-down-line"></i>
+                        <i className="ri-arrow-down-line"></i>
                      </button>
 
                      {dropdownOpen && (
@@ -116,19 +117,19 @@ function Gallery() {
                <div className="gallery__container container grid">
                   {/* <!-- Insert images according to the size of the reference images (1500 X 800, 800 X 1500, 150 X 150, etc.) --> */}
                   <div className="gallery__image">
-                     <img src={gallery1_Img} alt="image" className="gallery__img"/>
+                     <img src={gallery1_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(gallery1_Img)}/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={gallery2_Img} alt="image" className="gallery__img"/>
+                     <img src={gallery2_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(gallery2_Img)}/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={gallery3_Img} alt="image" className="gallery__img"/>
+                     <img src={gallery3_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(gallery3_Img)}/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={gallery4_Img} alt="image" className="gallery__img"/>
+                     <img src={gallery4_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(gallery4_Img)}/>
                   </div>
                </div>
             </section>
@@ -138,26 +139,47 @@ function Gallery() {
             <br/>
             <h1>International Yoga Day Celebrations</h1>
       
-            <section className="gallery section" id='internship'>
+            <section className="gallery section" id='yoga'>
                <div className="gallery__container container grid">
                   {/* <!-- Insert images according to the size of the reference images (1500 X 800, 800 X 1500, 150 X 150, etc.) --> */}
                   <div className="gallery__image">
-                     <img src={yoga1_Img} alt="image" className="gallery__img"/>
+                     <img src={yoga1_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(yoga1_Img)}/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={yoga2_Img} alt="image" className="gallery__img"/>
+                     <img src={yoga2_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(yoga2_Img)}/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={yoga3_Img} alt="image" className="gallery__img"/>
+                     <img src={yoga3_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(yoga3_Img)}/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={yoga4_Img} alt="image" className="gallery__img"/>
+                     <img src={yoga4_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(yoga4_Img)}/>
                   </div>
                </div>
             </section>
+
+                        {selectedImage && (
+            <div
+               className="gallery__lightbox"
+               onClick={() => setSelectedImage(null)}
+            >
+               <button
+                  className="gallery__close"
+                  onClick={() => setSelectedImage(null)}
+               >
+                  <i className="ri-close-line"></i>
+               </button>
+
+               <img
+                  src={selectedImage}
+                  alt="Zoomed gallery"
+                  className="gallery__zoom-image"
+                  onClick={(e) => e.stopPropagation()}
+               />
+            </div>
+            )}
 
       <section className="contact section" id="contact">
          <div className="contact__container container grid">

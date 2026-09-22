@@ -23,6 +23,7 @@ import PresentationCarousel from "../components/PresentationCarousel";
 function Home() {
 
    const [dropdownOpen, setDropdownOpen] = useState(false);
+   const [selectedImage, setSelectedImage] = useState(null);
 
    return (
     <>
@@ -65,7 +66,7 @@ function Home() {
                         onClick={() => setDropdownOpen(!dropdownOpen)}
                      >
                         Events
-                        <i class="ri-arrow-down-line"></i>
+                        <i className="ri-arrow-down-line"></i>
                      </button>
 
                      {dropdownOpen && (

@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 function Birthday() {
 
    const [dropdownOpen, setDropdownOpen] = useState(false);
+   const [selectedImage, setSelectedImage] = useState(null);
 
    return (
     <>
@@ -60,7 +61,7 @@ function Birthday() {
                         onClick={() => setDropdownOpen(!dropdownOpen)}
                      >
                         Events
-                        <i class="ri-arrow-down-line"></i>
+                        <i className="ri-arrow-down-line"></i>
                      </button>
 
                      {dropdownOpen && (
@@ -115,22 +116,43 @@ function Birthday() {
                <div className="gallery__container container grid">
                   {/* <!-- Insert images according to the size of the reference images (1500 X 800, 800 X 1500, 150 X 150, etc.) --> */}
                   <div className="gallery__image">
-                     <img src={birth1_Img} alt="image" className="gallery__img"/>
+                     <img src={birth1_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(birth1_Img)}/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={birth2_Img} alt="image" className="gallery__img"/>
+                     <img src={birth2_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(birth2_Img)}/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={birth3_Img} alt="image" className="gallery__img"/>
+                     <img src={birth3_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(birth3_Img)}/>
                   </div>
       
                   <div className="gallery__image">
-                     <img src={birth4_Img} alt="image" className="gallery__img"/>
+                     <img src={birth4_Img} alt="image" className="gallery__img" onClick={() => setSelectedImage(birth4_Img)}/>
                   </div>
                </div>
             </section>
+
+                        {selectedImage && (
+            <div
+               className="gallery__lightbox"
+               onClick={() => setSelectedImage(null)}
+            >
+               <button
+                  className="gallery__close"
+                  onClick={() => setSelectedImage(null)}
+               >
+                  <i className="ri-close-line"></i>
+               </button>
+
+               <img
+                  src={selectedImage}
+                  alt="Zoomed gallery"
+                  className="gallery__zoom-image"
+                  onClick={(e) => e.stopPropagation()}
+               />
+            </div>
+            )}
             
 
       <section className="contact section" id="contact">
