@@ -109,8 +109,7 @@ function HIVTest() {
 
             <br/>
             <br/>
-            <h1>Our Internship Programs</h1>
-            <p><b>We provide flexible internship & training programs under experienced professional individuals for College/University Bachelor's and Master's students.</b></p>
+            <h1>Our HIV Testing and Monitoring Programs</h1>
       
             <section className="gallery section" id='internship'>
                <div className="gallery__container container grid">

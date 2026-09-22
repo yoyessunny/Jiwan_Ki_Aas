@@ -119,7 +119,7 @@ function Home() {
                </h1>
 
                <p className="home__description">
-                  Drug De-Addiction Counselling & Rehabilitation Center <br/>
+                  Drug De-Addiction Counselling & Rehabilitation Center <br/><span>(Govt. Approved)</span> <br/>
                </p>
 
                <a href="tel:+916283794604" className="button">Get Started</a>
@@ -166,7 +166,7 @@ function Home() {
                <p className="delivery__description"><b>
                   Through individual counselling, supportive conversations, behavioural guidance, and recovery planning, <br/>
                   We help individuals take positive steps toward a healthier and more stable life. <br/>
-                  <i>Nasha Mukt Bharat</i> <br/></b>
+                  <i>"Nasha Mukt Bharat"</i> <br/></b>
                </p>
 
                <div className="delivery__info">
@@ -224,12 +224,12 @@ function Home() {
             <div className="about__data">
                <div>
                   <h2 className="section__title">
-                     <span>We Have Certified</span>
+                     <span>We Have Govt. Approved</span>
                      <br/> Medical Service
                   </h2>
 
                   <p className="about__description">
-                     Don't worry, we have certified medical services, so
+                     Don't worry, we have Govt. certified medical services, so
                      you can receive medical consultations for Drug De-Addiction & Rehabilitation.
                   </p>
                </div>
