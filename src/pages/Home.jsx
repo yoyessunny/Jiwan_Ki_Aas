@@ -18,6 +18,7 @@ import ScrollUp from "../components/ScrollUp";
 import WhatsApp from "../components/WhatsApp";
 import { Link } from "react-router-dom";
 import PresentationCarousel from "../components/PresentationCarousel";
+import PdfReader from "../components/PdfReader";
 
 function Home() {
 
@@ -262,11 +263,14 @@ function Home() {
       <section id='blogs'>
              <PresentationCarousel />
       </section>
-
+                     <br />
+                     <br />
+      {/* <!--==================== PDF READER ====================--> */}
+      <h2>Psychology, Physiology & Treatment of Drug Addiction</h2>
+                     <br />
       <section>
          <div>
-
-
+                     <PdfReader />
          </div>
       </section>
       
