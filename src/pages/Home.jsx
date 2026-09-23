@@ -12,7 +12,6 @@ import heroPng from '../assets/hero.png'
 import 'remixicon/fonts/remixicon.css'
 import ChatBot from "../components/ChatBot";
 import Location from "../components/Location";
-import SlideShare from '../components/SlideShare'
 import YouTube from '../components/YouTube'
 import Header from "../components/Header";
 import ScrollUp from "../components/ScrollUp";
@@ -260,13 +259,14 @@ function Home() {
          </div>
       </section>
 
-      <section>
+      <section id='blogs'>
              <PresentationCarousel />
       </section>
 
-      <section id='blogs'>
+      <section>
          <div>
-            <SlideShare></SlideShare>
+
+
          </div>
       </section>
       
