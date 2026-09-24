@@ -18,6 +18,7 @@ import ScrollUp from "../components/ScrollUp";
 import WhatsApp from "../components/WhatsApp";
 import { Link } from "react-router-dom";
 import PresentationCarousel from "../components/PresentationCarousel";
+import PresentationCarousel2 from "../components/PresentationCarousel2";
 import PdfReader from "../components/PdfReader";
 
 function Home() {
@@ -256,7 +257,9 @@ function Home() {
                   <i className="ri-arrow-right-s-line"></i>
                </a>
             </div>
-            <img src={aboutImg} alt="image" className="about__img"/>
+            <div className="about__img">
+                     <PresentationCarousel2/>
+            </div>
          </div>
       </section>
 
