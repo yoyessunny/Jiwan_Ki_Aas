@@ -24,7 +24,7 @@ import PdfReader from "../components/PdfReader";
 function Home() {
 
    const [dropdownOpen, setDropdownOpen] = useState(false);
-   const [selectedImage, setSelectedImage] = useState(null);
+   const [menuOpen, setMenuOpen] = useState(false);
 
    return (
     <>
@@ -35,79 +35,135 @@ function Home() {
          <Link to="/" className="nav__logo">
             <img className='Logo' src={heroPng} alt='Jiwan Ki Aas Logo'/>        
          </Link>
-           <div className="nav__menu" id="nav-menu">
+          {/* Menu Button */}
+        <button
+         type="button"
+         className="nav__toggle"
+         onClick={() => {
+            setMenuOpen(prev => !prev);
+            setDropdownOpen(false);
+         }}
+         aria-label="Toggle menu"
+         >
+         <i className="ri-menu-line"></i>
+         </button>
+           <div className={`nav__menu ${menuOpen ? "show-menu" : ""}`} id="nav-menu">
                 <ul className="nav__list">
                    <li className="nav__item">
-                      <Link to="/" className="nav__link active-link">Home</Link>
+                      <Link to="/" className="nav__link active-link" onClick={() => setMenuOpen(false)}>Home</Link>
                    </li>
     
                    <li>
-                      <a href="/#delivery" className="nav__link">Rescue Services</a>
+                      <a href="/#delivery" className="nav__link" onClick={() => setMenuOpen(false)}>Rescue Services</a>
                    </li>
     
                    <li>
-                      <a href="/#about" className="nav__link">About Us</a>
+                      <a href="/#about" className="nav__link" onClick={() => setMenuOpen(false)}>About Us</a>
                    </li>
     
                    <li>
-                      <a href="/#prices" className="nav__link">Prices</a>
+                      <a href="/#prices" className="nav__link" onClick={() => setMenuOpen(false)}>Prices</a>
                    </li>
     
                    <li>
-                      <a href='/#blogs' className='nav__link'>Blogs</a>
+                      <a href='/#blogs' className='nav__link' onClick={() => setMenuOpen(false)}>Blogs</a>
                    </li>
                    <li>
-                      <Link to="/gallery" href="#gallery" className='nav__link'>Gallery</Link>
+                      <Link to="/gallery" className='nav__link' onClick={() => setMenuOpen(false)}>Gallery</Link>
                    </li>
                        {/* Dropdown */}
-                     <li className="dropdown nav__link">
+                     <li className="dropdown">
 
                      <button
-                        className="dropdown__button"
-                        onClick={() => setDropdownOpen(!dropdownOpen)}
-                     >
+                        type="button"
+                        className="dropdown__button nav__link"
+                        onClick={() => setDropdownOpen(prev => !prev)}
+                        >
                         Events
                         <i className="ri-arrow-down-line"></i>
                      </button>
 
-                     {dropdownOpen && (
-                        <ul className="dropdown__menu">
+                       {dropdownOpen && (
+            <ul className="dropdown__menu">
 
-                           <li>
-                               <Link to="/internship" className='nav__link'>Internship</Link>
-                           </li>
+              <li>
+                <Link
+                  to="/internship"
+                  className="dropdown__link"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setDropdownOpen(false);
+                  }}
+                >
+                  Internship
+                </Link>
+              </li>
 
-                           <li>
-                               <Link to="/schoolvisit" className='nav__link'>School Visits</Link>
-                           </li>
+              <li>
+                <Link
+                  to="/schoolvisit"
+                  className="dropdown__link"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setDropdownOpen(false);
+                  }}
+                >
+                  School Visits
+                </Link>
+              </li>
 
-                           <li>
-                               <Link to="/fieldvisit" className='nav__link'>Field Visits</Link>
-                           </li>
-                           
-                           <li>
-                               <Link to="/hivtest" className='nav__link'>HIV Test</Link>
-                           </li>
-                           
-                           <li>
-                               <Link to="/birthday" className='nav__link'>Birthday Celebrations</Link>
-                           </li>
-                        </ul>
-                     )}
+              <li>
+                <Link
+                  to="/fieldvisit"
+                  className="dropdown__link"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setDropdownOpen(false);
+                  }}
+                >
+                  Field Visits
+                </Link>
+              </li>
 
-                     </li>
+              <li>
+                <Link
+                  to="/hivtest"
+                  className="dropdown__link"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setDropdownOpen(false);
+                  }}
+                >
+                  HIV Test
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/birthday"
+                  className="dropdown__link"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setDropdownOpen(false);
+                  }}
+                >
+                  Birthday Celebrations
+                </Link>
+              </li>
+
+            </ul>
+          )}
+
+        </li>
+
+
 
                    <li>
-                      <a href="/#contact" className="nav__link">Contact</a>
+                      <a href="/#contact" className="nav__link" onClick={() => setMenuOpen(false)}>Contact</a>
                    </li>
                 </ul>
              </div>
     
-            <div className="nav__buttons">
-               <div className="nav__toggle" id="nav-toggle">
-                  <i className="ri-menu-line"></i>
-               </div>
-            </div>
          </nav>
       </header>
       {/* <Header /> */}
